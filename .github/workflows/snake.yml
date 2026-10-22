@@ -32,5 +32,9 @@ jobs:
             exit 0
           fi
           git commit -m "chore: regenerate GD snake"
-          git pull --rebase
-          git push
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main && git push && exit 0
+            sleep 3
+          done
+          exit 1
