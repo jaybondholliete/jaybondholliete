@@ -123,9 +123,20 @@ export function languageStack(user, limit = 5) {
       totals.set(name, cur);
     }
   }
-  const top = [...totals.entries()].sort((a, b) => b[1].size - a[1].size).slice(0, limit);
+  const top = [...totals.entries()].sort((a, b) => b[1].size - a[1].size);
   const sum = top.reduce((s, [, v]) => s + v.size, 0) || 1;
-  return top.map(([name, v]) => ({ name, color: v.color, pct: (v.size / sum) * 100 }));
+  const stack = top.map(([name, v]) => ({ name, color: v.color, pct: (v.size / sum) * 100 }));
+
+  const manualPath = path.join(CONF_DIR, 'stack.json');
+  if (fs.existsSync(manualPath)) {
+    for (const m of JSON.parse(fs.readFileSync(manualPath, 'utf8'))) {
+      const hit = stack.find((l) => l.name.toLowerCase() === m.name.toLowerCase());
+      if (hit) Object.assign(hit, m);
+      else stack.push(m);
+    }
+    stack.sort((a, b) => b.pct - a.pct);
+  }
+  return stack.slice(0, limit);
 }
 
 export function featuredRepos(user, limit = 4) {
