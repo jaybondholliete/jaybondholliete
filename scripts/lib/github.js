@@ -49,7 +49,10 @@ query($login: String!) {
     bio
     followers { totalCount }
     contributionsCollection {
-      contributionCalendar { totalContributions }
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { date weekday contributionCount contributionLevel } }
+      }
     }
     repositories(first: 100, isFork: false, ownerAffiliations: OWNER, orderBy: {field: STARGAZERS, direction: DESC}) {
       nodes {

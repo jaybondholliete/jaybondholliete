@@ -20,6 +20,7 @@ jobs:
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: jaybondholliete
+          github_token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           outputs: |
             assets/snake.svg?color_snake=#ff2d78&color_dots=#10142e,#134e4a,#0f766e,#14b8a6,#a3e635
       - name: Commit and push

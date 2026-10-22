@@ -35,15 +35,17 @@ nothing is interactive (GitHub READMEs are static).
 - City legend labels: `l10n` keys in the same JSON.
 - Featured repos: create `conf/projects.json` with repo names to pin manually;
   otherwise it uses GitHub pinned items → top-starred fallback.
-- Counting private contributions: create a classic PAT (repo + read:user),
-  add it as repo secret `PAT`, then set `GITHUB_TOKEN: ${{ secrets.PAT }}`
-  in the two data-fetching workflows.
+- Counting private contributions: create a classic PAT (repo + read:user)
+  and add it as repo secret `GH_PAT`. All three workflows already use
+  `secrets.GH_PAT || secrets.GITHUB_TOKEN` — it takes effect immediately.
+  Without it only public contributions show (GitHub profile counts both,
+  so the on-site number can look larger).
 
 ## Gotchas
 
 - Repo Settings → Actions → General → Workflow permissions must be
   "Read and write" or the regeneration commits will fail.
-- The banner/panels fetch public profile fields via GraphQL — the default
-  Actions `GITHUB_TOKEN` is enough, no PAT needed.
+- The banner/panels fetch profile fields via GraphQL — the default Actions
+  `GITHUB_TOKEN` covers public data; add `GH_PAT` for private contribs.
 - `snake.svg` colors live in `.github/workflows/snake.yml` query params
   (`color_dots` is exactly 5 values, first = empty cell).

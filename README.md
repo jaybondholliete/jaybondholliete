@@ -14,6 +14,9 @@
 <p align="center">
   <img src="profile-3d-contrib/profile-gd-city.svg" width="100%" alt="3D contribution city built from GD blocks"/>
 </p>
+<p align="center">
+  <img src="assets/calendar.svg" width="100%" alt="contribution block grid — every day a jump"/>
+</p>
 
 <p align="center">
   <img src="assets/divider.svg" width="100%" alt=""/>

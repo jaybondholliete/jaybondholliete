@@ -28,18 +28,19 @@ jobs:
       - name: Generate panels
         working-directory: scripts
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GH_USERNAME: jaybondholliete
         run: |
           node gen-banner.js
           node gen-lang-panel.js
           node gen-projects-panel.js
           node gen-latest.js
+          node gen-calendar.js
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/banner.svg assets/lang-panel.svg assets/projects-panel.svg assets/latest.svg
+          git add assets/banner.svg assets/lang-panel.svg assets/projects-panel.svg assets/latest.svg assets/calendar.svg
           if git diff --cached --quiet; then
             echo "panels unchanged"
             exit 0
