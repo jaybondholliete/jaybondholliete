@@ -1,6 +1,7 @@
 [
   { "name": "Flutter", "pct": 96, "color": "#54C5F8", "best": true },
   { "name": "Lua", "pct": 58, "color": "#8282FF" },
+  { "name": "Python", "pct": 52, "color": "#4584B6" },
   { "name": "C#", "pct": 47, "color": "#3CC41E" },
   { "name": "GDScript", "pct": 42, "color": "#5B9BD5" }
 ]
