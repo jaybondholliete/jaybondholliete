@@ -1,0 +1,26 @@
+name: regenerate GD contribution city
+
+on:
+  schedule:
+    - cron: "0 */24 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'conf/github-profile-3d-contrib.json'
+      - '.github/workflows/profile-3d-contrib.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: jaybondholliete
+          MAX_REPOS: 100
+          SETTING_JSON: conf/github-profile-3d-contrib.json

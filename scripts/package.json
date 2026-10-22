@@ -1,0 +1,10 @@
+{
+  "name": "gd-profile-readme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "node gen-banner.js && node gen-lang-panel.js && node gen-projects-panel.js",
+    "gen:mock": "node gen-banner.js --mock && node gen-lang-panel.js --mock && node gen-projects-panel.js --mock"
+  }
+}

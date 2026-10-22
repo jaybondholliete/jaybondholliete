@@ -1,0 +1,39 @@
+name: regenerate GD profile panels
+
+on:
+  schedule:
+    - cron: "30 */24 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'conf/**'
+      - 'scripts/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-panels
+
+jobs:
+  panels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Generate panels
+        working-directory: scripts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: jaybondholliete
+        run: |
+          node gen-banner.js
+          node gen-lang-panel.js
+          node gen-projects-panel.js
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: regenerate GD profile panels"
+          file_pattern: "assets/banner.svg assets/lang-panel.svg assets/projects-panel.svg"

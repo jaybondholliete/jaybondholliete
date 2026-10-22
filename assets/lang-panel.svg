@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="230" viewBox="0 0 440 230">
+  <defs>
+    
+  <filter id="glow-green" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#39ff88" flood-opacity="0.8"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  <filter id="glow-cyan" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feFlood flood-color="#22d3ee" flood-opacity="0.8"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="440" height="230" fill="#0a0f24"/>
+  
+  <rect x="10" y="10" width="420" height="210" rx="12" fill="#10142e" stroke="#2a3166" stroke-width="1.5"/>
+  <line x1="24" y1="50" x2="416" y2="50" stroke="#2a3166" stroke-width="1"/>
+  <text x="26" y="37" font-size="15" font-weight="700" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#39ff88" letter-spacing="2.5" text-anchor="start" filter="url(#glow-green)" opacity="1">LANGUAGE STACK</text>
+  <text x="414" y="37" font-size="11" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">// repo-weighted</text>
+  
+  <g>
+    <rect x="26" y="52" width="10" height="10" rx="2" fill="#00B4AB"/>
+    <text x="46" y="61" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">Dart</text>
+    <text x="414" y="61" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">80.9%</text>
+    <rect x="46" y="68" width="368" height="7" rx="3.5" fill="#1a2044"/>
+    <rect x="46" y="68" width="307" height="7" rx="3.5" fill="#00B4AB" filter="url(#glow-cyan)"/>
+  </g>
+  <g>
+    <rect x="26" y="84" width="10" height="10" rx="2" fill="#f1e05a"/>
+    <text x="46" y="93" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">JavaScript</text>
+    <text x="414" y="93" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">8.8%</text>
+    <rect x="46" y="100" width="368" height="7" rx="3.5" fill="#1a2044"/>
+    <rect x="46" y="100" width="34" height="7" rx="3.5" fill="#f1e05a" filter="url(#glow-cyan)"/>
+  </g>
+  <g>
+    <rect x="26" y="116" width="10" height="10" rx="2" fill="#4F5D95"/>
+    <text x="46" y="125" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">PHP</text>
+    <text x="414" y="125" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">6.2%</text>
+    <rect x="46" y="132" width="368" height="7" rx="3.5" fill="#1a2044"/>
+    <rect x="46" y="132" width="23" height="7" rx="3.5" fill="#4F5D95" filter="url(#glow-cyan)"/>
+  </g>
+  <g>
+    <rect x="26" y="148" width="10" height="10" rx="2" fill="#3572A5"/>
+    <text x="46" y="157" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">Python</text>
+    <text x="414" y="157" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">2.9%</text>
+    <rect x="46" y="164" width="368" height="7" rx="3.5" fill="#1a2044"/>
+    <rect x="46" y="164" width="11" height="7" rx="3.5" fill="#3572A5" filter="url(#glow-cyan)"/>
+  </g>
+  <g>
+    <rect x="26" y="180" width="10" height="10" rx="2" fill="#012456"/>
+    <text x="46" y="189" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">PowerShell</text>
+    <text x="414" y="189" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">1.2%</text>
+    <rect x="46" y="196" width="368" height="7" rx="3.5" fill="#1a2044"/>
+    <rect x="46" y="196" width="4" height="7" rx="3.5" fill="#012456" filter="url(#glow-cyan)"/>
+  </g>
+
+</svg>
