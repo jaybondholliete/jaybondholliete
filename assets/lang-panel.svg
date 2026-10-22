@@ -37,52 +37,52 @@
     <rect x="46" y="68" width="365" height="7" rx="3.5" fill="#54C5F8" filter="url(#glow-cyan)"/>
   </g>
   <g>
-    <rect x="26" y="82" width="10" height="10" rx="2" fill="#00B4AB"/>
-    <text x="46" y="91" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">Dart</text>
+    <rect x="26" y="82" width="10" height="10" rx="2" fill="#8282FF"/>
+    <text x="46" y="91" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">Lua</text>
     
-    <text x="414" y="91" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">79.8%</text>
+    <text x="414" y="91" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">58.0%</text>
     <rect x="46" y="98" width="368" height="7" rx="3.5" fill="#1a2044"/>
-    <rect x="46" y="98" width="303" height="7" rx="3.5" fill="#00B4AB" filter="url(#glow-cyan)"/>
+    <rect x="46" y="98" width="220" height="7" rx="3.5" fill="#8282FF" filter="url(#glow-cyan)"/>
   </g>
   <g>
-    <rect x="26" y="112" width="10" height="10" rx="2" fill="#8282FF"/>
-    <text x="46" y="121" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">Lua</text>
+    <rect x="26" y="112" width="10" height="10" rx="2" fill="#4584B6"/>
+    <text x="46" y="121" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">Python</text>
     
-    <text x="414" y="121" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">58.0%</text>
+    <text x="414" y="121" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">52.0%</text>
     <rect x="46" y="128" width="368" height="7" rx="3.5" fill="#1a2044"/>
-    <rect x="46" y="128" width="220" height="7" rx="3.5" fill="#8282FF" filter="url(#glow-cyan)"/>
+    <rect x="46" y="128" width="198" height="7" rx="3.5" fill="#4584B6" filter="url(#glow-cyan)"/>
   </g>
   <g>
-    <rect x="26" y="142" width="10" height="10" rx="2" fill="#4584B6"/>
-    <text x="46" y="151" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">Python</text>
+    <rect x="26" y="142" width="10" height="10" rx="2" fill="#3CC41E"/>
+    <text x="46" y="151" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">C#</text>
     
-    <text x="414" y="151" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">52.0%</text>
+    <text x="414" y="151" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">47.0%</text>
     <rect x="46" y="158" width="368" height="7" rx="3.5" fill="#1a2044"/>
-    <rect x="46" y="158" width="198" height="7" rx="3.5" fill="#4584B6" filter="url(#glow-cyan)"/>
+    <rect x="46" y="158" width="179" height="7" rx="3.5" fill="#3CC41E" filter="url(#glow-cyan)"/>
   </g>
   <g>
-    <rect x="26" y="172" width="10" height="10" rx="2" fill="#3CC41E"/>
-    <text x="46" y="181" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">C#</text>
+    <rect x="26" y="172" width="10" height="10" rx="2" fill="#5B9BD5"/>
+    <text x="46" y="181" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">GDScript</text>
     
-    <text x="414" y="181" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">47.0%</text>
+    <text x="414" y="181" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">42.0%</text>
     <rect x="46" y="188" width="368" height="7" rx="3.5" fill="#1a2044"/>
-    <rect x="46" y="188" width="179" height="7" rx="3.5" fill="#3CC41E" filter="url(#glow-cyan)"/>
+    <rect x="46" y="188" width="160" height="7" rx="3.5" fill="#5B9BD5" filter="url(#glow-cyan)"/>
   </g>
   <g>
-    <rect x="26" y="202" width="10" height="10" rx="2" fill="#5B9BD5"/>
-    <text x="46" y="211" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">GDScript</text>
+    <rect x="26" y="202" width="10" height="10" rx="2" fill="#f1e05a"/>
+    <text x="46" y="211" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">JavaScript</text>
     
-    <text x="414" y="211" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">42.0%</text>
+    <text x="414" y="211" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">38.6%</text>
     <rect x="46" y="218" width="368" height="7" rx="3.5" fill="#1a2044"/>
-    <rect x="46" y="218" width="160" height="7" rx="3.5" fill="#5B9BD5" filter="url(#glow-cyan)"/>
+    <rect x="46" y="218" width="147" height="7" rx="3.5" fill="#f1e05a" filter="url(#glow-cyan)"/>
   </g>
   <g>
-    <rect x="26" y="232" width="10" height="10" rx="2" fill="#f1e05a"/>
-    <text x="46" y="241" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">JavaScript</text>
+    <rect x="26" y="232" width="10" height="10" rx="2" fill="#e34c26"/>
+    <text x="46" y="241" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">HTML</text>
     
-    <text x="414" y="241" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">8.7%</text>
+    <text x="414" y="241" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">9.2%</text>
     <rect x="46" y="248" width="368" height="7" rx="3.5" fill="#1a2044"/>
-    <rect x="46" y="248" width="33" height="7" rx="3.5" fill="#f1e05a" filter="url(#glow-cyan)"/>
+    <rect x="46" y="248" width="35" height="7" rx="3.5" fill="#e34c26" filter="url(#glow-cyan)"/>
   </g>
 
 </svg>

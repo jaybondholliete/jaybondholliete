@@ -74,7 +74,7 @@
 
   <g>
     <rect x="40" y="154" width="150" height="24" rx="5" fill="#10142e" stroke="#2a3166"/>
-    <text x="52" y="171" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#a3ff12" letter-spacing="1" text-anchor="start" filter="url(#glow-green)" opacity="1">ATTEMPT #1390</text>
+    <text x="52" y="171" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#a3ff12" letter-spacing="1" text-anchor="start" filter="url(#glow-green)" opacity="1">ATTEMPT #1391</text>
   </g>
   <text x="40" y="196" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#22d3ee" letter-spacing="0" text-anchor="start" opacity="1">&gt; press start to continue</text>
   <text x="233" y="196" font-size="12" font-family="'Courier New', Consolas, monospace" fill="#22d3ee">_<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></text>
