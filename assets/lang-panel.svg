@@ -25,7 +25,7 @@
   <g>
     <rect x="26" y="52" width="10" height="10" rx="2" fill="#f1e05a"/>
     <text x="46" y="61" font-size="13" font-weight="600" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">JavaScript</text>
-    <text x="414" y="61" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">79.8%</text>
+    <text x="414" y="61" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">79.9%</text>
     <rect x="46" y="68" width="368" height="7" rx="3.5" fill="#1a2044"/>
     <rect x="46" y="68" width="303" height="7" rx="3.5" fill="#f1e05a" filter="url(#glow-cyan)"/>
   </g>
