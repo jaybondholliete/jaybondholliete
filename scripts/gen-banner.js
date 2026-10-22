@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { fetchProfile, loadTheme, ASSETS_DIR } from './lib/github.js';
+import { fetchProfile, loadTheme, ASSETS_DIR, CONF_DIR } from './lib/github.js';
 import { svgDoc, text, cube, spikeRow, blockRow, glowFilter, FONT_MONO } from './lib/svg.js';
 
 const W = 900, H = 240;
@@ -13,7 +13,18 @@ const followers = user.followers?.totalCount ?? 0;
 const attempts = user.contributionsCollection?.contributionCalendar?.totalContributions ?? 0;
 
 const GROUND_Y = 205;
-const CUBE_X = 668, CUBE_Y = 128, CUBE_S = 46;
+const CUBE_X = 640, CUBE_Y = 128, CUBE_S = 46;
+
+const AVATAR_PATH = path.join(CONF_DIR, 'avatar.png');
+let avatar = '';
+if (fs.existsSync(AVATAR_PATH)) {
+  const b64 = fs.readFileSync(AVATAR_PATH).toString('base64');
+  avatar = `<g clip-path="url(#avclip)">
+    <image x="690" y="0" width="210" height="240" preserveAspectRatio="xMidYMin slice" href="data:image/png;base64,${b64}"/>
+    <rect x="690" y="0" width="110" height="240" fill="url(#avfade)"/>
+    <rect x="690" y="0" width="210" height="240" fill="${t.bg}" opacity="0.14"/>
+  </g>`;
+}
 
 function skyline() {
   const bars = [
@@ -76,13 +87,19 @@ const defs = `
   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#070b1d"/>
     <stop offset="1" stop-color="#0d1130"/>
-  </linearGradient>`;
+  </linearGradient>
+  <linearGradient id="avfade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#0d1130" stop-opacity="1"/>
+    <stop offset="1" stop-color="#0d1130" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="avclip"><rect x="690" y="0" width="210" height="240"/></clipPath>`;
 
 const body = `
   <rect width="${W}" height="${H}" fill="url(#sky)"/>
   ${stars()}
   ${floorGrid()}
   ${skyline()}
+  ${avatar}
 
   <g>${blockRow(0, GROUND_Y, 20, 45, '#10142e', t.border)}</g>
   <rect x="0" y="${GROUND_Y + 20}" width="900" height="${H - GROUND_Y - 20}" fill="#0d1230"/>

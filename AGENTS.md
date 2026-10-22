@@ -35,6 +35,9 @@ nothing is interactive (GitHub READMEs are static).
 - City legend labels: `l10n` keys in the same JSON.
 - Featured repos: create `conf/projects.json` with repo names to pin manually;
   otherwise it uses GitHub pinned items → top-starred fallback.
+- Language stack overrides: `conf/stack.json` — `{name, pct, color, best}`.
+- Banner character: replace `conf/avatar.png` (embedded base64 into the SVG;
+  keep it ~200-400KB, portrait crop works best).
 - Counting private contributions: create a classic PAT (repo + read:user)
   and add it as repo secret `GH_PAT`. All three workflows already use
   `secrets.GH_PAT || secrets.GITHUB_TOKEN` — it takes effect immediately.
