@@ -24,58 +24,16 @@
   
   <g>
     <g>
-    <path d="M 28.4 65.6 L 26.4 59.6 L 32 63.6 Z" fill="#a855f7" stroke="#06081c" stroke-width="1.2"/><path d="M 43.6 65.6 L 45.6 59.6 L 40 63.6 Z" fill="#a855f7" stroke="#06081c" stroke-width="1.2"/>
-    <rect x="26" y="62" width="20" height="20" rx="2.8000000000000003" fill="#a855f7" stroke="#06081c" stroke-width="1.6"/>
+    
+    <rect x="26" y="62" width="20" height="20" rx="2.8000000000000003" fill="#39ff88" stroke="#06081c" stroke-width="1.6"/>
     <rect x="30.4" y="68" width="2.8000000000000003" height="4" fill="#06081c"/>
     <rect x="38.8" y="68" width="2.8000000000000003" height="4" fill="#06081c"/>
-    <line x1="32" y1="76.4" x2="40" y2="76.4" stroke="#06081c" stroke-width="1.4000000000000001" stroke-linecap="round"/>
+    <path d="M 32 75.6 Q 36 78.4 40 75.6" stroke="#06081c" stroke-width="1.4000000000000001" fill="none" stroke-linecap="round"/>
   </g>
-    <text x="52" y="66" font-size="13" font-weight="700" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">nexus-broker-tms</text>
-    <text x="414" y="66" font-size="9" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="1" text-anchor="end" opacity="1">INSANE</text>
-    <text x="52" y="82" font-size="10.5" font-weight="400" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#8a93b8" letter-spacing="0" text-anchor="start" opacity="1">freight brokerage TMS — loads, ca…</text>
-    <text x="414" y="82" font-size="9.5" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">★ 18  ● Dart  #flutter #tms</text>
-    <line x1="26" y1="92" x2="414" y2="92" stroke="#1a2044" stroke-width="0.7"/>
-  </g>
-  <g>
-    <g>
-    
-    <rect x="26" y="104" width="20" height="20" rx="2.8000000000000003" fill="#ffc83d" stroke="#06081c" stroke-width="1.6"/>
-    <rect x="30.4" y="110" width="2.8000000000000003" height="4" fill="#06081c"/>
-    <rect x="38.8" y="110" width="2.8000000000000003" height="4" fill="#06081c"/>
-    <line x1="32" y1="118.4" x2="40" y2="118.4" stroke="#06081c" stroke-width="1.4000000000000001" stroke-linecap="round"/>
-  </g>
-    <text x="52" y="108" font-size="13" font-weight="700" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">nexus-load-board</text>
-    <text x="414" y="108" font-size="9" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="1" text-anchor="end" opacity="1">HARD</text>
-    <text x="52" y="124" font-size="10.5" font-weight="400" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#8a93b8" letter-spacing="0" text-anchor="start" opacity="1">realtime load board with websocke…</text>
-    <text x="414" y="124" font-size="9.5" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">★ 9  ● Dart  #flutter</text>
-    <line x1="26" y1="134" x2="414" y2="134" stroke="#1a2044" stroke-width="0.7"/>
-  </g>
-  <g>
-    <g>
-    
-    <rect x="26" y="146" width="20" height="20" rx="2.8000000000000003" fill="#22d3ee" stroke="#06081c" stroke-width="1.6"/>
-    <rect x="30.4" y="152" width="2.8000000000000003" height="4" fill="#06081c"/>
-    <rect x="38.8" y="152" width="2.8000000000000003" height="4" fill="#06081c"/>
-    <line x1="32" y1="160.4" x2="40" y2="160.4" stroke="#06081c" stroke-width="1.4000000000000001" stroke-linecap="round"/>
-  </g>
-    <text x="52" y="150" font-size="13" font-weight="700" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">gitskins-clone</text>
-    <text x="414" y="150" font-size="9" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="1" text-anchor="end" opacity="1">NORMAL</text>
-    <text x="52" y="166" font-size="10.5" font-weight="400" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#8a93b8" letter-spacing="0" text-anchor="start" opacity="1">readme svg generators for profile…</text>
-    <text x="414" y="166" font-size="9.5" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">★ 2  ● JavaScript  #svg</text>
-    <line x1="26" y1="176" x2="414" y2="176" stroke="#1a2044" stroke-width="0.7"/>
-  </g>
-  <g>
-    <g>
-    
-    <rect x="26" y="188" width="20" height="20" rx="2.8000000000000003" fill="#ffc83d" stroke="#06081c" stroke-width="1.6"/>
-    <rect x="30.4" y="194" width="2.8000000000000003" height="4" fill="#06081c"/>
-    <rect x="38.8" y="194" width="2.8000000000000003" height="4" fill="#06081c"/>
-    <line x1="32" y1="202.4" x2="40" y2="202.4" stroke="#06081c" stroke-width="1.4000000000000001" stroke-linecap="round"/>
-  </g>
-    <text x="52" y="192" font-size="13" font-weight="700" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">dotfiles</text>
-    <text x="414" y="192" font-size="9" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="1" text-anchor="end" opacity="1">HARD</text>
-    <text x="52" y="208" font-size="10.5" font-weight="400" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#8a93b8" letter-spacing="0" text-anchor="start" opacity="1">windows + git bash setup, scripts…</text>
-    <text x="414" y="208" font-size="9.5" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">★ 4  ● PowerShell</text>
+    <text x="52" y="66" font-size="13" font-weight="700" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">skill</text>
+    <text x="414" y="66" font-size="9" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="1" text-anchor="end" opacity="1">EASY</text>
+    <text x="52" y="82" font-size="10.5" font-weight="400" font-family="Verdana, 'DejaVu Sans', sans-serif" fill="#8a93b8" letter-spacing="0" text-anchor="start" opacity="1"></text>
+    <text x="414" y="82" font-size="9.5" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="0" text-anchor="end" opacity="1">★ 0</text>
     
   </g>
 
