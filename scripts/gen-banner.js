@@ -15,15 +15,17 @@ const attempts = user.contributionsCollection?.contributionCalendar?.totalContri
 const GROUND_Y = 205;
 const CUBE_X = 640, CUBE_Y = 128, CUBE_S = 46;
 
-const AVATAR_PATH = path.join(CONF_DIR, 'avatar.png');
+const AVATAR_PATH = [path.join(CONF_DIR, 'avatar_no_bg.png'), path.join(CONF_DIR, 'avatar.png')]
+  .find((p) => fs.existsSync(p));
 let avatar = '';
-if (fs.existsSync(AVATAR_PATH)) {
+if (AVATAR_PATH) {
   const b64 = fs.readFileSync(AVATAR_PATH).toString('base64');
-  avatar = `<g clip-path="url(#avclip)">
-    <image x="690" y="0" width="210" height="240" preserveAspectRatio="xMidYMin slice" href="data:image/png;base64,${b64}"/>
-    <rect x="690" y="0" width="110" height="240" fill="url(#avfade)"/>
-    <rect x="690" y="0" width="210" height="240" fill="${t.bg}" opacity="0.14"/>
-  </g>`;
+  const hasBg = !AVATAR_PATH.includes('no_bg');
+  const img = hasBg
+    ? `<image x="690" y="0" width="210" height="240" preserveAspectRatio="xMidYMin slice" href="data:image/png;base64,${b64}"/>
+    <rect x="690" y="0" width="110" height="240" fill="url(#avfade)"/>`
+    : `<image x="690" y="-3" width="210" height="215" preserveAspectRatio="xMidYMax meet" href="data:image/png;base64,${b64}"/>`;
+  avatar = `<g clip-path="url(#avclip)">${img}</g>`;
 }
 
 function skyline() {
