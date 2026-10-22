@@ -6,6 +6,18 @@
   "contributionsCollection": {
     "contributionCalendar": { "totalContributions": 672 }
   },
+  "events": [
+    {
+      "type": "PushEvent",
+      "repo": { "name": "jaybondholliete/skill" },
+      "created_at": "2026-10-22T08:12:00Z",
+      "payload": {
+        "commits": [
+          { "sha": "abc1234", "message": "fix spike hitbox on level 7" }
+        ]
+      }
+    }
+  ],
   "repositories": {
     "nodes": [
       {

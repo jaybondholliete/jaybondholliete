@@ -34,11 +34,12 @@ jobs:
           node gen-banner.js
           node gen-lang-panel.js
           node gen-projects-panel.js
+          node gen-latest.js
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/banner.svg assets/lang-panel.svg assets/projects-panel.svg
+          git add assets/banner.svg assets/lang-panel.svg assets/projects-panel.svg assets/latest.svg
           if git diff --cached --quiet; then
             echo "panels unchanged"
             exit 0

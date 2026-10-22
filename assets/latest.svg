@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56">
+  <defs>
+    <filter id="g" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#22d3ee" flood-opacity="0.8"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+<rect width="900" height="56" fill="#0a0f24"/>
+<rect x="10" y="7" width="880" height="42" rx="8" fill="#10142e" stroke="#2a3166"/>
+<g transform="rotate(0 40 28)" >
+    <rect x="30" y="18" width="20" height="20" rx="2.4" fill="#22d3ee" stroke="#06081c" stroke-width="2"/>
+    <rect x="34" y="22" width="12" height="12" fill="#a3ff12" stroke="#06081c" stroke-width="1.2"/>
+    <rect x="36" y="24.4" width="3.2" height="4.4" fill="#06081c"/>
+    <rect x="40.8" y="24.4" width="3.2" height="4.4" fill="#06081c"/>
+  </g>
+<text x="72" y="35" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#a3ff12" letter-spacing="2" text-anchor="start" opacity="1">LAST JUMP</text>
+<text x="172" y="35" font-size="12.5" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#e8f4ff" letter-spacing="0" text-anchor="start" opacity="1">jaybondholliete/skill — &quot;fix spike hitbox on level 7&quot; · 8h ago</text>
+<circle cx="858" cy="28" r="4" fill="#ff2d78"><animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+<text x="844" y="33" font-size="9" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#ff2d78" letter-spacing="1" text-anchor="end" opacity="1">LIVE</text>
+</svg>

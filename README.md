@@ -1,6 +1,9 @@
 <p align="center">
   <img src="assets/banner.svg" width="100%" alt="jaybondholliete — Geometry Dash themed profile banner"/>
 </p>
+<p align="center">
+  <img src="assets/latest.svg" width="100%" alt="latest contribution — last jump"/>
+</p>
 
 <p align="center">
   <img src="assets/divider.svg" width="100%" alt=""/>

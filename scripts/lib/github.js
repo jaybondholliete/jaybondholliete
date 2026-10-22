@@ -85,6 +85,30 @@ export async function fetchProfile() {
   return data.user;
 }
 
+async function rest(p) {
+  const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+  const res = await fetch(`https://api.github.com${p}`, {
+    headers: {
+      Accept: 'application/vnd.github+json',
+      'User-Agent': 'gd-profile-readme',
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
+  });
+  if (!res.ok) throw new Error(`GitHub REST HTTP ${res.status}`);
+  return res.json();
+}
+
+export async function fetchLatestEvent() {
+  if (USE_MOCK) return loadMock().events?.[0] ?? null;
+  const events = await rest(`/users/${USERNAME}/events/public?per_page=30`);
+  if (!Array.isArray(events)) return null;
+  return (
+    events.find((e) => e.type === 'PushEvent' && e.payload?.commits?.length) ||
+    events[0] ||
+    null
+  );
+}
+
 export function languageStack(user, limit = 5) {
   const totals = new Map();
   for (const repo of user.repositories?.nodes ?? []) {
