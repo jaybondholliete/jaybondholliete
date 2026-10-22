@@ -9,6 +9,7 @@ on:
     paths:
       - 'conf/**'
       - 'scripts/**'
+      - '.github/workflows/readme-panels.yml'
 
 permissions:
   contents: write
@@ -33,7 +34,15 @@ jobs:
           node gen-banner.js
           node gen-lang-panel.js
           node gen-projects-panel.js
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: regenerate GD profile panels"
-          file_pattern: "assets/banner.svg assets/lang-panel.svg assets/projects-panel.svg"
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/banner.svg assets/lang-panel.svg assets/projects-panel.svg
+          if git diff --cached --quiet; then
+            echo "panels unchanged"
+            exit 0
+          fi
+          git commit -m "chore: regenerate GD profile panels"
+          git pull --rebase
+          git push
