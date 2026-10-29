@@ -70,7 +70,7 @@
     </g>
   </g>
 
-  <text x="40" y="34" font-size="11" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="2" text-anchor="start" opacity="1">◈ 3 PLAYERS WATCHING</text>
+  <text x="40" y="34" font-size="11" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="2" text-anchor="start" opacity="1">◈ 4 PLAYERS WATCHING</text>
   <text x="860" y="34" font-size="11" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#8a93b8" letter-spacing="2" text-anchor="end" opacity="1">LVL 01 · NORMAL ★ 2</text>
 
   <text x="40" y="70" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#ff2d78" letter-spacing="4" text-anchor="start" filter="url(#glow-magenta)" opacity="1">PLAYER 01</text>
@@ -80,7 +80,7 @@
 
   <g>
     <rect x="40" y="154" width="150" height="24" rx="5" fill="#10142e" stroke="#2a3166"/>
-    <text x="52" y="171" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#a3ff12" letter-spacing="1" text-anchor="start" filter="url(#glow-green)" opacity="1">ATTEMPT #820</text>
+    <text x="52" y="171" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#a3ff12" letter-spacing="1" text-anchor="start" filter="url(#glow-green)" opacity="1">ATTEMPT #895</text>
   </g>
   <text x="40" y="196" font-size="12" font-weight="700" font-family="'Courier New', Consolas, monospace" fill="#22d3ee" letter-spacing="0" text-anchor="start" opacity="1">&gt; press start to continue</text>
   <text x="233" y="196" font-size="12" font-family="'Courier New', Consolas, monospace" fill="#22d3ee">_<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></text>
